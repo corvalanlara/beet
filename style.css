@@ -1,0 +1,17 @@
+body {
+  background-color: #F0A1D7;
+}
+
+.imago {
+  text-align: center;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.beet {
+  height: 15em;
+  width: 15em;
+  vertical-align: middle;
+}
