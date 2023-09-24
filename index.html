@@ -2,14 +2,145 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
   <title>betarraga</title>
+  <link rel="stylesheet" type="text/css" href="css/bulma.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" href="images/beet.png">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Silkscreen&display=swap" rel="stylesheet">
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="betarraga">
+  <meta name="description" content="Ofrecemos un servicio personalizado con foco en los objetivos de cada usuario">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://betarraga.cl/">
+  <meta property="og:title" content="betarraga">
+  <meta property="og:description" content="Entregamos soluciones digitales para sus proyectos">
+  <meta property="og:image" content="images/portada.png">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://betarraga.cl">
+  <meta property="twitter:title" content="betarraga">
+  <meta property="twitter:description" content="Entregamos soluciones digitales para sus proyectos">
+  <meta property="twitter:image" content="images/portada.png">
 </head>
 <body>
-  <figure class="imago">
-    <img class="beet" src="beet.png" alt="betarraga"/>
-  </figure>
+  <section class="section">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand has-text-centered">
+          <a class="navbar-item" href="index.html">
+            <img class="imgsize" src="images/beet.png" alt="Logo de betarraga"/>
+          </a>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarbeet">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+      </div>
+
+        <div id="navbarbeet" class="navbar-menu">
+          <div class="navbar-end is-size-3">
+
+            <a class="navbar-item" href="index.html#contacto">
+              Contacto
+            </a>
+
+          </div>
+        </div>
+    </nav>
+  </section>
+
+  
+<section class="section">
+	<div class="container">
+		<div class="columns is-centered is-vcentered">
+			<div class="column is-one-quarter has-text-centered">
+				<figure class="image">
+					<img src="images/beetindex.png" alt="Objeto 3D rotativo" />
+				</figure>
+			</div>
+			<div class="column is-half has-text-centered">
+				<p class="is-family-secondary is-size-1 has-text-white">Crea el sitio web que tu proyecto necesita</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="contacto" class="section is-medium">
+    <div class="columns is-centered">
+        <div class="column is-half">
+            <div class="container has-text-centered">
+                <h1 class="title has-text-white">Contacto</h1>
+                <form action="https://formkeep.com/f/8dc58b95e660"
+                accept-charset="UTF-8"
+                enctype="multipart/form-data"
+                method="POST">
+                    <div class="field is-horizontal">
+                        <div class="field-label">
+                            <label for="nombre" class="label has-text-white">Nombre</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control has-icons-left">
+                                    <input id="nombre" name="nombre" class="input" type="text" placeholder="Juan" required>
+                                    <span class="icon is-small is-left has-text-primary">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-label">
+                            <label for="correo" class="label has-text-white">Correo</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control has-icons-left">
+                                    <input id="correo" name="correo" class="input" type="email" placeholder="juan@correo.com" required>
+                                    <span class="icon is-small is-left has-text-primary">
+                                        <i class="fa fa-envelope"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-label">
+                            <label for="texto" class="label has-text-white">Texto</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <textarea id="texto" name="texto" class="textarea" placeholder="Escribe aquí..." required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field is-grouped is-grouped-centered">
+                        <div class="control">
+                            <button class="button is-link">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <!-- Javascrip -->
+  <script src="js/index.js"></script>
+  
+</body>
 </body>
 </html>

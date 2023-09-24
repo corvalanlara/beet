@@ -1,0 +1,27 @@
+.imago {
+  text-align: center;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.beet {
+  height: 5em;
+  width: 5em;
+  vertical-align: middle;
+}
+
+.imgsize {
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-item .imgsize {
+  max-height: unset; !important
+}
+
+.nobeet {
+  width: 300px;
+}
