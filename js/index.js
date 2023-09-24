@@ -23,3 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+function beforeSubmit() {
+  const url = new URL(location);
+  url.searchParams.set("form", "enviado");
+  history.pushState({}, "", url);
+  return true;
+}
