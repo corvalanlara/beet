@@ -24,9 +24,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-function beforeSubmit() {
+function changeURL() {
   const url = new URL(location);
   url.searchParams.set("form", "enviado");
   history.pushState({}, "", url);
+}
+
+async function beforeSubmit() {
+  const url = await changeURL();
   return true;
 }
