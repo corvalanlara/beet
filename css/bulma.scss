@@ -20,6 +20,7 @@ $link: $pink;
 $body-background-color: $purple;
 $navbar-background-color: $purple;
 $navbar-item-color: white;
+$dimensions: 16 24 32 48 64 96 128 256;
 
 // Import only what you need from Bulma
 @import "../bulma-0.9.4/bulma/sass/utilities/_all.sass";
