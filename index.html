@@ -37,6 +37,13 @@
 
     gtag('config', 'G-S3SFP59RKJ');
   </script>
+  <!-- antispam -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script>
+    function onSubmit(token) {
+      document.getElementById("contactoform").submit();
+     }
+  </script>
 </head>
 <body>
   <section class="section">
@@ -87,6 +94,7 @@
                 <h1 class="title has-text-white">Contacto</h1>
                 <form action="https://formkeep.com/f/8dc58b95e660"
                 accept-charset="UTF-8"
+		id="contactoform"
                 enctype="multipart/form-data"
                 onsubmit="beforeSubmit()" 
                 method="POST">
@@ -134,7 +142,7 @@
                     </div>
                     <div class="field is-grouped is-grouped-centered">
                         <div class="control">
-                            <button class="button is-link">Enviar</button>
+                            <button class="button is-link g-recaptcha" data-sitekey="6Le2eRIqAAAAALvif5oOCzMxc2dS-RMpe3r50P16" data-callback="onSubmit">Enviar</button>
                         </div>
                     </div>
                 </form>
