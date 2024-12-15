@@ -34,3 +34,14 @@ async function beforeSubmit() {
   const url = await changeURL();
   return true;
 }
+
+const speed = 8000;
+
+function scroll(speed) {
+    $('.marco').animate({ scrollTop: $(this).height() }, speed, function() {
+        $(this).animate({ scrollTop: 0 }, speed);
+    })
+}
+
+scroll(speed)
+setInterval(function(){scroll(speed)}, speed * 2);
