@@ -6,6 +6,13 @@
   align-items: center;
 }
 
+.marco {
+  border: 7px solid #7A1F3D;
+  overflow: auto;
+  max-height: 200px;
+  min-height: 200px;
+}
+
 .beet {
   height: 5em;
   width: 5em;
@@ -24,6 +31,28 @@
 
 .nobeet {
   width: 300px;
+}
+
+.emoji {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.shake {
+  animation: shake-animation 4.72s ease infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes shake-animation {
+   0% { transform:rotate(0deg) }
+  1.78571% { transform:rotate(3deg) }
+  3.57143% { transform:rotate(0deg) }
+  5.35714% { transform:rotate(5deg) }
+  7.14286% { transform:rotate(0deg) }
+  8.92857% { transform:rotate(3deg) }
+  10.71429% { transform:rotate(0deg) }
+  100% { transform:rotate(0deg) }
 }
 
 @media(max-width: 770px) {
