@@ -9,12 +9,14 @@ $pink: #C71E56;
 $yellow: #7A742B;
 $blue: #12647A;
 $celeste: #28A5C7;
+$verde: #5AB54C;
 
 // Update Bulma's global variables
 $family-primary: 'Silkscreen', cursive;
 $family-secondary: 'Finger Paint', cursive;
 $primary: $purple;
 $link: $pink;
+$success: $verde;
 
 // Update some of Bulma's component variables
 $body-background-color: $purple;
@@ -23,11 +25,11 @@ $navbar-item-color: white;
 $dimensions: 16 24 32 48 64 96 128 256;
 
 // Import only what you need from Bulma
-@import "../bulma-0.9.4/bulma/sass/utilities/_all.sass";
-@import "../bulma-0.9.4/bulma/sass/base/_all.sass";
-@import "../bulma-0.9.4/bulma/sass/elements/_all.sass";
-@import "../bulma-0.9.4/bulma/sass/form/_all.sass";
-@import "../bulma-0.9.4/bulma/sass/components/_all.sass";
-@import "../bulma-0.9.4/bulma/sass/layout/_all.sass";
-@import "../bulma-0.9.4/bulma/sass/grid/_all.sass";
-@import "../bulma-0.9.4/bulma/sass/helpers/_all.sass";
+@import "../../bulma-0.9.4/bulma/sass/utilities/_all.sass";
+@import "../../bulma-0.9.4/bulma/sass/base/_all.sass";
+@import "../../bulma-0.9.4/bulma/sass/elements/_all.sass";
+@import "../../bulma-0.9.4/bulma/sass/form/_all.sass";
+@import "../../bulma-0.9.4/bulma/sass/components/_all.sass";
+@import "../../bulma-0.9.4/bulma/sass/layout/_all.sass";
+@import "../../bulma-0.9.4/bulma/sass/grid/_all.sass";
+@import "../../bulma-0.9.4/bulma/sass/helpers/_all.sass";
