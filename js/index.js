@@ -45,3 +45,7 @@ function scroll(speed) {
 
 scroll(speed)
 setInterval(function(){scroll(speed)}, speed * 2);
+
+if (document.URL.includes("?message=sent#contacto")) {
+	alert("Mensaje enviado exitosamente");
+}

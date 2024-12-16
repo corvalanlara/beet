@@ -3,7 +3,7 @@
         <div class="column is-half">
             <div class="container has-text-centered">
                 <h1 class="title has-text-white">Contacto</h1>
-                <form action="https://formkeep.com/f/8dc58b95e660"
+                <form action="https://api.staticforms.xyz/submit"
                 accept-charset="UTF-8"
 		id="contactoform"
                 enctype="multipart/form-data"
@@ -31,7 +31,7 @@
                         <div class="field-body">
                             <div class="field">
                                 <div class="control has-icons-left">
-                                    <input id="correo" name="correo" class="input" type="email" placeholder="juan@correo.com" required>
+                                    <input id="correo" name="email" class="input" type="email" placeholder="juan@correo.com" required>
                                     <span class="icon is-small is-left has-text-primary">
                                         <i class="fa fa-envelope"></i>
                                     </span>
@@ -46,11 +46,17 @@
                         <div class="field-body">
                             <div class="field">
                                 <div class="control">
-                                    <textarea id="texto" name="texto" class="textarea" placeholder="Escribe aquí..." required></textarea>
+                                    <textarea id="texto" name="message" class="textarea" placeholder="Escribe aquí..." required></textarea>
                                 </div>
                             </div>
                         </div>
                     </div>
+		    <input type="text" name="honeypot" style="display:none">
+		    <input type="hidden" name="accessKey" value="9ac0447e-64f1-466d-a469-9f878d2118fa">
+		    <input type="hidden" name="subject" value="Mensaje desde betarraga.com" />
+		    <input type="hidden" name="replyTo" value="@">
+		    <input type="hidden" name="redirectTo" value="https://betarraga.com#contacto?message=sent">
+
                     <div class="field is-grouped is-grouped-centered">
                         <div class="control">
                             <button class="button is-link g-recaptcha" data-sitekey="6Le2eRIqAAAAALvif5oOCzMxc2dS-RMpe3r50P16" data-callback="onSubmit">Enviar</button>
