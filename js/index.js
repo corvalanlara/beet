@@ -59,3 +59,20 @@ document.addEventListener('DOMContentLoaded', () => {
 if (document.URL.includes("?message=sent#contacto")) {
 	document.querySelector('.notification').classList.remove('is-hidden')
 }
+
+const palabras = ["empresa", "negocio", "proyecto"]
+let contador = 0
+function change() {
+	$('#palabra').animate({
+		'opacity':0
+	}, 400, function() {
+		$(this).text(palabras[contador]).animate({
+			'opacity':1
+		}, 400)
+		contador++
+		if (contador >= palabras.length) {
+			contador = 0
+		}
+	})
+}
+setInterval(change, 3000)
