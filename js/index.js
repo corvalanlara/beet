@@ -46,6 +46,16 @@ function scroll(speed) {
 scroll(speed)
 setInterval(function(){scroll(speed)}, speed * 2);
 
+document.addEventListener('DOMContentLoaded', () => {
+  (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+    const $notification = $delete.parentNode;
+
+    $delete.addEventListener('click', () => {
+      $notification.parentNode.removeChild($notification);
+    });
+  });
+});
+
 if (document.URL.includes("?message=sent#contacto")) {
-	alert("Mensaje enviado exitosamente");
+	document.querySelector('.notification').classList.remove('is-hidden')
 }
