@@ -52,7 +52,12 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand has-text-centered">
           <a class="navbar-item has-text-white" href="index.html">
-            <img class="imgsize" src="images/beet.png" alt="Logo de betarraga"/>
+		  <picture>
+			  <source srcSet="images/beet.avif" type="image/avif"/>
+			  <source srcSet="images/beet.webp" type="image/webp"/>
+			  <source srcSet="images/beet.png" type="image/png"/>
+			  <img class="imgsize" src="images/beet.png" alt="Logo de betarraga"/>
+		  </picture>
             betarraga
           </a>
           <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarbeet">

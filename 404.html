@@ -52,7 +52,12 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand has-text-centered">
           <a class="navbar-item has-text-white" href="index.html">
-            <img class="imgsize" src="images/beet.png" alt="Logo de betarraga"/>
+		  <picture>
+			  <source srcSet="images/beet.avif" type="image/avif"/>
+			  <source srcSet="images/beet.webp" type="image/webp"/>
+			  <source srcSet="images/beet.png" type="image/png"/>
+			  <img class="imgsize" src="images/beet.png" alt="Logo de betarraga"/>
+		  </picture>
             betarraga
           </a>
           <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarbeet">
@@ -82,7 +87,12 @@
 				<p class="is-size-1 has-text-weight-bold mb-1 has-text-white">404</p>
 				<p class="is-size-3 is-family-secondary has-text-white">La página que buscas no existe</p>
 				<figure class="image is-square">
-					<img class="nobeet" src="images/nobeet.png" alt="Ilustración de una betarraga" />
+					<picture>
+						<source srcSet="images/nobeet.avif" type="image/avif" />
+						<source srcSet="images/nobeet.webp" type="image/webp" />
+						<source srcSet="images/nobeet.png" type="image/png" />
+						<img class="nobeet" src="images/nobeet.png" alt="Ilustración de una betarraga" />
+					</picture>
 				</figure>
 				<p class="is-family-secondary has-text-white">(Esperemos que exista para la próxima cosecha)</p>
 			</div>
