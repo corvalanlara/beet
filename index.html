@@ -39,13 +39,10 @@
     gtag('config', 'AW-11348034123');
   </script>
   <!-- antispam -->
-  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LcMwp8qAAAAALmCjL3op6uEHpfA9u-l_WSISWmr"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script>
   function onSubmit(e) {
-    e.preventDefault();
-    grecaptcha.enterprise.ready(async () => {
-      const token = await grecaptcha.enterprise.execute('6LcMwp8qAAAAALmCjL3op6uEHpfA9u-l_WSISWmr', {action: 'LOGIN'});
-      });
+    document.getElementById('contactoform').submit();
     }
   </script>
   <!-- jQuery -->
@@ -169,7 +166,8 @@
                 <h1 class="title has-text-white">Contacto</h1>
                 <form action="https://api.staticforms.xyz/submit"
                 accept-charset="UTF-8"
-		id="contactoform"
+		            id="contactoform"
+                onsubmit="beforeSubmit()"
                 method="POST">
                     <div class="field is-horizontal">
                         <div class="field-label">
@@ -221,7 +219,7 @@
 
                     <div class="field is-grouped is-grouped-centered">
                         <div class="control">
-				<button class="button is-link g-recaptcha" data-sitekey="6LcMwp8qAAAAALmCjL3op6uEHpfA9u-l_WSISWmr" data-callback="onSubmit">Enviar</button>
+				<button class="button is-link g-recaptcha" data-sitekey="6Le2eRIqAAAAALvif5oOCzMxc2dS-RMpe3r50P16" data-callback="onSubmit">Enviar</button>
                         </div>
                     </div>
                 </form>
