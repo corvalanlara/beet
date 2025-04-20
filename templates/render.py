@@ -1,7 +1,7 @@
 from jinja2 import Environment, FileSystemLoader
 
 env = Environment(loader=FileSystemLoader('templates'))
-templates = ['index.html', '404.html']
+templates = ['index.html', '404.html', 'betagym.html']
 
 for template in templates:
     tmp = env.get_template(template)

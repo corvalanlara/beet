@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+betaGym x betarraga
+{% endblock %}
+
+{% block cabeza %}
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+{% endblock %}
+
+{% block contenido %}
+<section class="section has-background-black">
+	<div class="container">
+		<div class="columns is-centered is-vcentered">
+			<div class="column is-one-quarter has-text-centered">
+				<figure data-aos="slide-right" data-aos-once="true" data-aos-anchor-placement="center-center" class="image has-image-centered" style="height: auto">
+					<picture>
+					<source srcSet="images/productos/betagym/2-white.png" type="image/avif" />
+					<img src="images/productos/betagym/2-white.png" alt="Ilustración de un hombre corriendo" />
+					</picture>
+				</figure>
+			</div>
+			<div class="column is-two-quarters has-text-centered">
+				<p data-aos="slide-left" data-aos-once="true" data-aos-anchor-placement="center-center" class="is-family-secondary is-size-2 is-size-3-mobile has-text-white">¿Manejar el gimnasio te tiene corriendo por todos lados?</p>
+			</div>
+		</div>
+		<div class="columns is-centered is-vcentered">
+			<div class="column is-one-quarter has-text-centered">
+				<figure data-aos="slide-right" data-aos-once="true" data-aos-anchor-placement="center-center" class="image has-image-centered" style="height: auto">
+					<picture>
+					<source srcSet="images/productos/betagym/5-white.png" type="image/avif" />
+					<img src="images/productos/betagym/5-white.png" alt="Ilustración de un hombre haciendo yoga" />
+					</picture>
+				</figure>
+			</div>
+			<div class="column is-two-quarters has-text-centered">
+				<p data-aos="slide-left" data-aos-once="true" data-aos-anchor-placement="center-center" class="is-family-secondary is-size-2 is-size-3-mobile has-text-white">¡Relájate!<br>¡Nosotros te ayudamos!</p>
+			</div>
+		</div>
+		<div class="columns is-centered is-vcentered">
+			<div class="column is-one-quarter has-text-centered">
+				<figure data-aos="slide-right" data-aos-once="true" data-aos-anchor-placement="center-center" class="image has-image-centered" style="height: auto">
+					<picture>
+					<source srcSet="images/productos/betagym/3-white.png" type="image/avif" />
+					<img src="images/productos/betagym/3-white.png" alt="Ilustración de un hombre revisando su teléfono" />
+					</picture>
+				</figure>
+			</div>
+			<div class="column is-two-quarters has-text-centered">
+				<p data-aos="slide-left" data-aos-once="true" data-aos-anchor-placement="center-center" class="is-family-secondary is-size-2 is-size-3-mobile has-text-white">Mantén el registro de clientes, horas y pagos con nosotros</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section has-background-success">
+	<div class="container">
+		<div class="columns is-centered is-vcentered">
+			<div class="column is-two-thirds has-text-left">
+				<p class="is-family-secondary is-size-1 is-size-3-mobile has-text-primary pb-3">Obtén todos los datos necesarios para:</p>
+				<ol class="is-family-secondary is-size-2 is-size-4-mobile has-text-primary pl-5">
+					<li>Campañas de marketing</li>
+					<li>Seguimiento de clientes</li>
+					<li>Reportes financieros</li>
+				</ol>
+			</div>
+			<div class="column is-one-quarter has-text-centered">
+				<figure class="image has-image-centered" style="height: auto">
+					<picture>
+						<source srcSet="images/productos/betagym/screenshots.png" type="image/avif" />
+					<img src="images/productos/betagym/screenshots.png" alt="Dos capturas de pantalla superpuestas de un formulario de inscripción y gráficos detallando información sobre los clientes" />
+					</picture>
+				</figure>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section is-medium has-background-white has-text-centered">
+	<div class="container has-text-centered">
+		<h1 class="title is-family-secondary has-text-primary">Estas empresas han confiado en nosotros</h1>
+		<div class="columns is-centered is-multiline is-vcentered">
+			<div class="column">
+				<a href="https://ifitgym.cl">
+				<figure class="image has-image-centered logos" style="width: 200px;">
+					<picture>
+						<source srcSet="images/productos/betagym/logo-ifitgym.png" type="image/avif" />
+					<img src="images/productos/betagym/logo-ifitgym.png" alt="Logo iFiTGym Melipilla" />
+					</picture>
+				</figure>
+				</a>
+			</div>
+			<div class="column">
+				<figure class="image has-image-centered logos" style="width: 250px;">
+					<picture>
+						<source srcSet="images/productos/betagym/logo-potrosgym.jpg" type="image/avif" />
+					<img src="images/productos/betagym/logo-potrosgym.jpg" alt="Logo Potros Gym" />
+					</picture>
+				</figure>
+			</div>
+			<div class="column">
+				<figure class="image has-image-centered logos" style="width: 250px;">
+					<picture>
+						<source srcSet="images/productos/betagym/logo-clinicadeportesmelipilla.png" type="image/avif" />
+					<img src="images/productos/betagym/logo-clinicadeportesmelipilla.png" alt="Logo Clínica Deportes Melipilla" />
+					</picture>
+				</figure>
+			</div>
+		</div>
+	</div>
+</section>
+{% with extra="Escríbenos solicitando una demostración para que conozcas nuestra plataforma"%}
+{% include "contacto.html" %}
+{% endwith %}
+{% endblock %}
+
+{% block js %}
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+	  AOS.init({disable: window.innerWidth < 768});
+  </script>
+{% endblock %}
