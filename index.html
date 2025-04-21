@@ -41,9 +41,9 @@
   <!-- antispam -->
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script>
-  function onSubmit(e) {
-    document.getElementById('contactoform').submit();
-    }
+     function onSubmit(token) {
+      document.getElementById("contactoform").submit();
+     }
   </script>
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -187,8 +187,8 @@
                 <h1 class="title has-text-white">Contacto</h1>
                 <form action="https://api.staticforms.xyz/submit"
                 accept-charset="UTF-8"
-		            id="contactoform"
-                onsubmit="beforeSubmit()"
+		id="contactoform"
+		 onsubmit="beforeSubmit()"
                 method="POST">
                     <div class="field is-horizontal">
                         <div class="field-label">

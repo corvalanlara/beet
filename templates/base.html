@@ -39,14 +39,11 @@
     gtag('config', 'AW-11348034123');
   </script>
   <!-- antispam -->
-  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LcMwp8qAAAAALmCjL3op6uEHpfA9u-l_WSISWmr"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script>
-  function onSubmit(e) {
-    e.preventDefault();
-    grecaptcha.enterprise.ready(async () => {
-      const token = await grecaptcha.enterprise.execute('6LcMwp8qAAAAALmCjL3op6uEHpfA9u-l_WSISWmr', {action: 'LOGIN'});
-      });
-    }
+     function onSubmit(token) {
+      document.getElementById("contactoform").submit();
+     }
   </script>
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
